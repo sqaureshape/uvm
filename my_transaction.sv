@@ -12,6 +12,11 @@ function new(string name = "");
   
 endfunction: new
 
+ virtual function string convert2str();
+     return $sformatf("DATAIN=0x%0h DATAOUT=0x%0h full=0x%0h empty = 0x%0h wn=0x%0h rn=0x%0h", DATAIN,DATAOUT, full,empty,wn,rn);
+  endfunction
+
+
 endclass: my_transaction
 
 typedef uvm_sequencer #(my_transaction) my_sequencer;
