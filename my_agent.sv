@@ -22,3 +22,5 @@ function void connect_phase(uvm_phase phase);
   my_monitor_h.aport.connect(aport);
   
 endfunction: connect_phase
+
+endclass:my_agent  
