@@ -1,4 +1,4 @@
-class my_agent extends uvm_agent
+class my_agent extends uvm_agent;
 `uvm_component_utils(my_agent)
 
 uvm_analysis_port #(my_transcation) aport;
