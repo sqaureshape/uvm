@@ -11,10 +11,10 @@ fork
 forever begin
 
  #10;
-clk = ~clk;
+clock = ~clock;
 
 end
-join_end
+join_none
 
 end 
 
