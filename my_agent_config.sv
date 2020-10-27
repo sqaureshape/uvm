@@ -1,5 +1,5 @@
 class my_agent_config extends uvm_object;
-`uvm_object_util(my_agent_config)
+`uvm_object_utils(my_agent_config)
 
 int value;
 
