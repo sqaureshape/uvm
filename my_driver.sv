@@ -10,7 +10,7 @@ endfunction : new
 function void build_phase(uvm_phase phase);
 
 if(!uvm_config_db#(virtual dut_if) ::get(null,"*","vif",vif))
-uvm_fatal("my_driver", "No DUT_IF");
+`uvm_fatal("my_driver", "No DUT_IF");
 
 endfunction:build_phase
 
