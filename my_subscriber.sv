@@ -3,7 +3,7 @@ class my_subscriber extends uvm_subscriber#(my_transaction);
 
 logic full,empty;
 
-covergroup fifo_status (int full, int empty);
+covergroup fifo_status ();
 
 coverpoint full;
 
@@ -23,7 +23,7 @@ endfunction:write
 
 function new(string name, uvm_component parent);
   super.new(name,parent);
-   fifo_status = new();
+  fifo_status = new();
 endfunction: new
 
 
