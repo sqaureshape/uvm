@@ -1,4 +1,4 @@
-class my_subsciber extends uvm_subscriber#(my_transaction); 
+class my_subscriber extends uvm_subscriber#(my_transaction); 
 `uvm_component_utils(my_subsciber)
 
 logic full,empty;
