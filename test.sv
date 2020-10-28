@@ -1,5 +1,5 @@
 class test extends uvm_test;
-`uvm_componenet_utils(test)
+`uvm_component_utils(test)
 
 //env
 
