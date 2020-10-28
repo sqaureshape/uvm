@@ -16,9 +16,9 @@ endfunction:build_phase
 
 task run_phase(uvm_phase phase);
 
-my_seq seq;
+write_seq seq;
 
-seq = my_seq :: type_id :: create("my_seq");
+  seq = write_seq :: type_id :: create("write_seq");
 
 assert(seq.randomize());
 phase.raise_objection(this);
