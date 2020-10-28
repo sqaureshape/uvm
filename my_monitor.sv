@@ -13,18 +13,18 @@ function void build_phase(uvm_phase phase);
 aport = new("aport",this);
 
 if(!uvm_config_db#(virtual dut_if) :: get(null,"*","vif",vif))
-`uvm_fatal("NO virtual interface connected");
+  `uvm_fatal("MONITOR","NO virtual interface connected");
 
 endfunction:build_phase
 
 task run_phase(uvm_phase phase);
-my transcation tx;
+my_transaction tx;
 
 forever
 begin
 @(posedge vif.clk);
 
-tx = my_transcation::type_id :: create("tx");
+tx = my_transaction::type_id :: create("tx");
 
 tx.DATAOUT = vif.DATAOUT;
 tx.DATAIN =vif.DATAIN;
