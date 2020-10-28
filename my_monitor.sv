@@ -22,7 +22,7 @@ my_transaction tx;
 
 forever
 begin
-@(posedge vif.clk);
+  @(posedge vif.clock);
 
 tx = my_transaction::type_id :: create("tx");
 
