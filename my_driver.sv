@@ -16,7 +16,7 @@ endfunction:build_phase
 
 task run_phase(uvm_phase phase);
 
-my transaction tx;
+my_transaction tx;
 
 forever
       begin
