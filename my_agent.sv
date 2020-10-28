@@ -1,7 +1,7 @@
 class my_agent extends uvm_agent;
 `uvm_component_utils(my_agent)
 
-uvm_analysis_port #(my_transcation) aport;
+  uvm_analysis_port #(my_transaction) aport;
 
 my_sequencer my_sequencer_h;
 my_driver my_driver_h;
