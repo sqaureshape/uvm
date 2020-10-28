@@ -1,5 +1,5 @@
-my_subsciber extends uvm_subscriber#(my_transaction); 
-`uvm_component_util(my_subsciber)
+class my_subsciber extends uvm_subscriber#(my_transaction); 
+`uvm_component_utils(my_subsciber)
 
 logic full,empty;
 
@@ -9,9 +9,9 @@ coverpoint full;
 
 coverpoint empty;
 
-endcovergroup:fifo_status
+endgroup:fifo_status
 
-function void write (my_transcation t);
+  function void write (my_transaction t);
 
 empty = t.empty;
 full = t.full;
@@ -22,7 +22,6 @@ endfunction:write
 
 
 function new(string name, uvm_component parent);
-  my_param_container params;
   super.new(name,parent);
    fifo_status = new();
 endfunction: new
