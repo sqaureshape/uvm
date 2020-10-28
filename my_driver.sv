@@ -1,11 +1,12 @@
 class my_driver extends uvm_driver #(my_transaction);
-`uvm_component_util(my_driver)
+`uvm_component_utils(my_driver)
 
 virtual dut_if vif;
 
 function new(string name, uvm_component parent);
   super.new(name, parent);
 endfunction : new
+  
 
 function void build_phase(uvm_phase phase);
 
