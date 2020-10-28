@@ -1,4 +1,4 @@
-my_transaction extends uvm_sequence_item;
+class my_transaction extends uvm_sequence_item;
 `uvm_config_utils(my_transaction)
 
 logic [7:0] DATAOUT;
