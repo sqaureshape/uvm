@@ -1,5 +1,5 @@
-my_env extends uvm_env;
-`uvm_component_util(my_env)
+class my_env extends uvm_env;
+`uvm_component_utils(my_env)
 
 my_agent my_agent_h;
 my_subscriber my_subscriber_h;
