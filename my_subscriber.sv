@@ -1,5 +1,5 @@
 class my_subscriber extends uvm_subscriber#(my_transaction); 
-`uvm_component_utils(my_subsciber)
+  `uvm_component_utils(my_subscriber)
 
 logic full,empty;
 
