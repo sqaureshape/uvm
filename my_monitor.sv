@@ -1,5 +1,5 @@
 class my_monitor extends uvm_monitor; 
-`uvm_component_utilts(my_monitor)
+`uvm_component_utils(my_monitor)
 
 uvm_analysis_port #(my_transcation) aport;
 virtual dut_if vif;
