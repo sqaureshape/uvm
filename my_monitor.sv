@@ -1,7 +1,7 @@
 class my_monitor extends uvm_monitor; 
 `uvm_component_utils(my_monitor)
 
-uvm_analysis_port #(my_transcation) aport;
+  uvm_analysis_port #(my_transaction) aport;
 virtual dut_if vif;
 
 function new(string name, uvm_component parent);
