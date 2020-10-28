@@ -1,11 +1,11 @@
 class my_transaction extends uvm_sequence_item;
-`uvm_config_utils(my_transaction)
+`uvm_object_utils(my_transaction)
 
 logic [7:0] DATAOUT;
 rand logic full , empty, wn, rn ;
 rand logic [7:0] DATAIN;
 
-constrain data_c { DATAIN >= 0; DATAIN < my_pkg::MAX_VALUE};
+    constrain data_c { DATAIN >= 0; DATAIN < 'hff;}
 
 function new(string name = "");
     super.new(name);
